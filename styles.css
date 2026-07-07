@@ -14,14 +14,26 @@ html{
 }
 body {
     background-image: linear-gradient(to bottom , #FC5E55 , #FA4083);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 5.2rem;
     font-family: "Playfair Display", sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-family: "Playfair Display", sans-serif;
+    margin-top: 2rem;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: .8rem;
 }
 
 .container {
@@ -44,27 +56,33 @@ main {
 }
 
 .cards {
-    min-height: 300px;
     display: flex;
     justify-content: space-between;
 }
 .card {
     width: 30%;
-    min-height: 300px;
+    min-height: 25rem;
+    background-position: bottom;
+    text-align: center;
+    padding: ;
 }
 
 .card--1{
-    background-color: rgb(188, 0, 62);
+    background-image: url("images/image-background-card2.jpg");
+    background-size: cover;
 }
 .card--2{
-    background-color: rgb(188, 85, 0);
+    background-image: url("images/image-background-card3.jpg");
+    background-size: cover;
 }
 .card--3{
-    background-color: rgb(188, 188, 0);
+    background-image: url("images/image-background-card2.jpg");
+    background-size: cover;
 }
 
 .main-content{
     flex:2;
+    padding-right: 10rem;
 }
 .main-image{
     flex: 1;
@@ -80,4 +98,11 @@ main {
 
 nav{
 
+}
+
+
+.cards p {
+    font-size: 1.36rem;
+    line-height: 1.9rem;
+    margin: 1rem 3rem 2rem 3rem;
 }
