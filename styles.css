@@ -20,9 +20,9 @@ html{
 
 body {
     background-image: linear-gradient(to bottom , #FC5E55 , #FA4083);
-    font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    font-size: 1.8rem;
 }
 
 h1{
@@ -66,6 +66,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid lightgray;
 }
 main {
     min-height: 300px;
@@ -83,6 +84,9 @@ main {
     background-position: bottom;
     text-align: center;
     padding: 3rem 3rem 2rem 3rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
 }
 
 .card--1{
@@ -130,20 +134,100 @@ nav{
     color: white;
 }
 
-.mybutton {
+.button {
     background-color: white;
     color: #FA4083;
     font-family: "Playfair Display", sans-serif;
     padding: 1.1rem 2.5rem;
-    display: block;
+    display: inline-block;
     margin-top: 1rem;
-    width: fit-content;
-    transition: all 0.2s ease-in-out;
+    border-radius: 2px;
 }
 
-.mybutton:hover {
+.button-primary {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in-out;
+}
+
+.button-primary:hover {
     transform: translateY(-2px);
 }
-.mybutton:active {
+
+.button-primary:active {
     transform: translateY(0px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.nav-button {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-family: "Playfair Display", sans-serif;
+    padding: 1.1rem 2.5rem;
+    border: 1px solid white;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: #FA4083;
+}
+
+.nav-button a {
+    color: inherit;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    display: none;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.nav-button:hover .dropdown {
+    display: block;
+}
+
+.dropdown .nav-button {
+    width: 20rem;
+    background-color: white;
+}
+.dropdown .nav-button a {
+    color: #FA4083;
+}
+
+.dropdown .nav-button:hover {
+   background-color: #FC5E55;
+}
+.dropdown .nav-button:hover a {
+    color: white;
+}
+.testimonies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.testimony {
+    border: 1px solid lightgray;
+    padding: 5rem;
+    width: 47%;
+    border-radius: 2px;
+    margin-top:5rem;
+}
+
+/* .testimony :last-child{
+    font-size: 1.4rem;
+} */
+
+.testimony p:last-of-type{
+    font-size: 1.4rem;
+    padding-left: 3rem;
 }
